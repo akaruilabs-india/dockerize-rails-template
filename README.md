@@ -24,3 +24,9 @@
 - `$ heroku run rails db:migrate`
 - `$ heroku run rails runner 'Joke.create(body: "Knock! Knock! Whos there? Owls say. Owls say who? Yes, they do.")'`
 - `$ heroku open`
+
+## Solved Errors
+- If below output found in heroku logs, run this: `$ heroku ps:scale web=1`
+```
+heroku[router]: at=error code=H14 desc="No web processes running" ...
+```
